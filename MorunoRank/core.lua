@@ -48,8 +48,7 @@ CRank = 0;
     return CRank;
  
 end;
- 
- 
+
 function MorunoRank()
  
     PercentPVPRank=math.floor(GetPVPRankProgress(target)*100);
@@ -89,6 +88,5 @@ function MorunoRank()
     SendChatMessage("Current RP: "..CurrentRP.." at "..PercentPVPRank.."% (Rank "..CurrentRank..") RP To Next Rank: "..NeededRPToNextRank.." This Week RP gained:"..math.floor(RB).." @ Total RP Calc: "..EEarns.." at "..PercentNextPVPRank.."%(Rank "..EarnedRank..")","emote");
    
 end
- 
 
 end)
