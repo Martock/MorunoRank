@@ -1,6 +1,6 @@
 # MorunoRank
 This addon calculates current rank points, as well as how much is needed to reach the next rank.
 
-To install: Extract the folder :MorunoRank: into your AddOns folder
+To install: Extract the folder MorunoRank into your AddOns folder
 
-To run the script: /script MorunoRank();
+To run the script type this or create a macro: /script MorunoRank();
