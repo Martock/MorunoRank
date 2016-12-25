@@ -1,6 +1,6 @@
 ## Title: MurunoRank
 ## Interface: 40200
 ## Notes: Shows Rank Progress
-## Version: 1.0
+## Version: 2.0
 
 core.lua
