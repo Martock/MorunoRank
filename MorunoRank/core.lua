@@ -83,15 +83,14 @@ function MorunoRank()
     EarnedRank = getCurrentRank(EEarns);
     PercentNextPVPRank=math.floor(((EEarns-getCurrentHP(EarnedRank))*100)/(getCurrentHP(UPVPRank+1)-getCurrentHP(UPVPRank)));
    
-    if(PercentNextPVPRank<0) then PercentNextPVPRank=PercentNextPVPRank;end;
+    if(PercentNextPVPRank<0) then PercentNextPVPRank=PercentNextPVPRank*-1;end;
  
-SendChatMessage("Current RP: "..CurrentRP.." at "..PercentPVPRank.."% (Rank "..CurrentRank..") RP To Next Rank: "..NeededRPToNextRank.." This Week RP Gained:"..math.floor(RB).." @ Total RP Calculation: "..EEarns.." at "..PercentNextPVPRank.."%(Rank "..EarnedRank..")","emote");
+    SendChatMessage("Current RP: "..CurrentRP.." at "..PercentPVPRank.."% (Rank "..CurrentRank..") RP To Next Rank: "..NeededRPToNextRank.." This Week RP Gained:"..math.floor(RB)..","emote");
 -- SendChatMessage("Current RP: "..CurrentRP.." at "..PercentPVPRank.."% (Rank "..CurrentRank..") RP To Next Rank: "..NeededRPToNextRank.." This Week RP Gained:"..math.floor(RB).." @ Total RP Calculation: "..EEarns.." at "..PercentNextPVPRank.."%(Rank "..EarnedRank..")","emote");
 -- This is a temp fix
    
 -- This is a reference to a verified calculation. Going to try and incorporate the 'RP gaming this week'. 
 -- /script P=(math.floor(GetPVPRankProgress(target)*10000))/100 W=UnitPVPRank("player") N=(W-6)*5000+5000*P/100 Q=(W-5)*5000-N*0.8 SendChatMessage("Rank Progress: "..P.."% ".."Current RP: "..N.." RP to next rank "..Q.."","emote")   
-   
 end
 
 end)
